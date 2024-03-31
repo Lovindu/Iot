@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Signup.dart';
 import 'package:flutter_application_1/forget.dart';
 import 'package:flutter_application_1/home.dart';
-import 'package:flutter_application_1/profile.dart';
 import 'package:flutter_application_1/track.dart';
 
 class LoginPage extends StatefulWidget {

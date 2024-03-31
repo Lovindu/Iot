@@ -12,27 +12,7 @@ class _CommandsState extends State<Commands> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
-          children: [
-            GestureDetector(
-              onTap: () {
-                // Handle the icon click event here
-                print('Icon clicked');
-              },
-              child: const Icon(
-                Icons.arrow_back,
-                color: Colors.white,
-              ),
-            ),
-            const SizedBox(
-              width: 10.0,
-            ),
-            const Text("Command"),
-          ],
-        ),
-        backgroundColor: Colors.blue,
-        titleTextStyle: const TextStyle(
-            color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
+        title: const Text("Command"),
       ),
       body: const SingleChildScrollView(
         padding: EdgeInsets.all(20.0),
@@ -56,6 +36,8 @@ class _CommandsState extends State<Commands> {
     );
   }
 }
+
+
 
 class Card extends StatefulWidget {
   final String text;

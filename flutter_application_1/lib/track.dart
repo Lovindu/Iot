@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/lovindu.dart';
 import 'package:flutter_application_1/profile.dart';
 
@@ -28,38 +29,38 @@ class _TrackState extends State<Track> {
             padding: const EdgeInsets.fromLTRB(5, 40, 30, 5),
             child: Column(
               children: [
-                GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Profile(),
-                      ),
-                    );
-                  },
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      CircleAvatar(
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Profile(),
+                          ),
+                        );
+                      },
+                      child: CircleAvatar(
                         radius: 35,
                         backgroundImage: AssetImage('images/profile.png'),
                       ),
-                      SizedBox(
-                        width: 50,
-                      ),
-                      CircleAvatar(
-                        radius: 50,
-                        backgroundImage: AssetImage('images/dog.png'),
-                      ),
-                      SizedBox(
-                        width: 70,
-                      ),
-                      CircleAvatar(
-                        radius: 15,
-                        backgroundImage: AssetImage('images/back.png'),
-                      ),
-                    ],
-                  ),
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    CircleAvatar(
+                      radius: 50,
+                      backgroundImage: AssetImage('images/dog.png'),
+                    ),
+                    SizedBox(
+                      width: 70,
+                    ),
+                    CircleAvatar(
+                      radius: 15,
+                      backgroundImage: AssetImage('images/back.png'),
+                    ),
+                  ],
                 ),
                 SizedBox(height: 20), // Added SizedBox for spacing
                 Padding(
